@@ -1,0 +1,437 @@
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    color :hsl(192, 100%, 9%)
+}
+
+
+body {
+    font-family: 'Open Sans';
+    text-align: center;
+}
+
+header {
+    padding : 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo > img {
+    width : 100px;
+}
+
+.logo > button {
+    padding : 5px 15px;
+    border : 1px solid hsl(322, 100%, 66%);
+    background-color: transparent;
+    border-radius: 50px;
+    color :hsl(322, 100%, 66%);
+    font-family: 'Open Sans';
+}
+
+.logo > button:hover {
+    cursor: pointer;
+}
+
+.heroContainer {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.heroContainer > p {
+    color :hsl(192, 100%, 9%)
+}
+
+.primary {
+    margin-top: 30px;
+    padding : 10px 20px;
+    border : none;
+    background-color: var(--Light-Pink);
+    border-radius: 50px;
+    color : #fff;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    box-shadow: 0px 6px 10px -5px rgba(0,0,0,0.4);
+}
+
+.primary:hover {
+    cursor: pointer;
+}
+
+.imageContainer {
+    margin-top: 100px;
+    min-width: 300px;
+}
+
+.imageContainer > img {
+    width : 100%;
+}
+
+
+.heroInfo {
+    margin-top: 70px;
+}
+
+.heroInfo > div {
+    position: relative;
+    padding-inline : 50px;
+    margin-bottom: 70px;
+}
+
+.heroInfo > div > img {
+    position: absolute;
+    left : 5em;
+    bottom : 6em;
+    width : 30px;
+}
+
+.heroInfo > div > h2 {
+   font-size: 50px;
+}
+
+.heroInfo > div > p {
+   color :grey
+}
+
+.middle {
+    margin-top: 20px;
+}
+
+.middle > .middleCard:first-child, .middleCard:last-child {
+    background-color: var(--Very-Pale-Blue);
+}
+
+.topBg {
+    position: relative;
+    top : -7em;
+}
+
+.topDesktop {
+    display: none;
+}
+
+.bottomBg {
+    position: relative;
+    bottom : -3em;
+}
+
+.bottomDesktopOne {
+    display: none;
+}
+
+.middleCard {
+    margin-bottom: 70px;
+}
+
+.middleCard > div {
+    padding : 30px;
+    min-width : 300px;
+}
+
+.middleCard > div > img {
+    width : 100%;
+    margin-bottom: 50px;
+}
+
+.middleCard > div > div > p {
+    margin-top: 20px;
+    color : var(--Very-Dark-Cyan)
+}
+
+.topBgTwo {
+    position: relative;
+    top : -3em;
+    left : 3em;
+}
+
+.bgDesktopTwo {
+    display: none;
+}
+
+.bgBottomTwo {
+    position: relative;
+    top : 6em;
+}
+
+.bgDesktopBottom {
+    display: none;
+}
+
+.cta {
+    margin-top: 10em;
+}
+
+footer {
+    margin-top: 10em;
+    background-color: var(--Very-Dark-Cyan);
+}
+
+.footerBg {
+    position: relative;
+    top : -3em;
+}
+
+.footerDesktop {
+    display: none;
+}
+
+.footerRight > h3,p {
+    color: #fff;
+}
+
+.footerRight {
+    text-align: left;
+    padding : 30px;
+}
+
+.footerRight > p {
+    margin-top: 20px;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+form > div > input {
+    padding : 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    width : 100%;
+}
+
+form > div > button {
+    width : 40%;
+    position: absolute;
+    right : 0;
+    bottom : -3em;
+    padding : 10px;
+    border: none;
+    background-color: var(--Pink);
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    color : #fff;
+}
+
+.footerLeft {
+    margin-top: 50px;
+    text-align: left;
+    padding : 30px;
+}
+
+.footerLeft > p {
+    margin-top: 10px;
+}
+
+.info {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap : 20px;
+}
+
+.socialMediaContainer {
+    margin-top: 4em;
+    display: flex;
+    gap : 20px;
+}
+
+ion-icon {
+    font-size: 30px;
+    color : #fff;
+}
+
+.success {
+    color : green;
+    display: none;
+}
+
+.error {
+    color : red;
+    display: none;
+}
+
+
+@media screen and (min-width : 1200px) {
+    header {
+        padding : 50px;
+    }
+
+    .logo > img {
+        width : 150px;
+    }
+
+    .heroContainer {
+        margin-top: 50px;
+        padding-inline : 200px;
+    }
+
+    .heroInfo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+    .heroInfo > div > img {
+        left : 3em;
+    }
+
+    .topBg {
+        display: none;
+    }
+
+    .topDesktop {
+        display: block;
+        position: relative;
+        top : -10em;
+    }
+
+    .firstCard{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .firstCard > img {
+        padding : 50px;
+    }
+
+    .firstCard > div {
+        text-align: left;
+        padding : 50px;
+    }
+
+    .bottomBg {
+        display: none;
+    }
+
+    .bottomDesktopOne {
+        display: block;
+        position: relative;
+        bottom : -5em;
+    }
+
+    .secondCard {
+        display: flex;
+        align-items: center;
+    }
+
+    .secondCard > img {
+        padding : 50px;
+    }
+
+    .secondCard > div {
+        text-align: left;
+        padding : 50px;
+    }
+
+    .thirdCard {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .topBgTwo {
+        display: none;
+    }
+
+    .bgDesktopTwo {
+        display: block;
+        position: relative;
+        top : -8em;
+    }
+
+    .bgBottomTwo {
+        display: none;
+    }
+
+    .bgDesktopBottom {
+        display: block;
+        position: relative;
+        bottom : -8em;
+    }
+
+    .thirdCard > img {
+        padding : 50px;
+    }
+
+    .thirdCard > div {
+        text-align: left;
+        padding : 50px;
+    }
+
+    .primary {
+        padding : 10px 50px;
+    }
+
+    .cta {
+        margin-bottom: 15em;
+    }
+
+    .footerBg {
+        display: none;
+    }
+
+    .footerDesktop {
+        display: block;
+        position: relative;
+        top : -9em;
+    }
+
+    footer > div {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .footerRight {
+        padding-inline : 80px;
+    }
+
+    .footerLeft {
+        padding-inline : 80px;
+    }
+
+    form > div > input {
+        width : 60%;
+    }
+
+    form > div > button {
+        width : 30%;
+        position: absolute;
+        right : 0;
+        bottom : .5em;
+    }
+}
+
+
+
+
